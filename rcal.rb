@@ -15,12 +15,12 @@ curr = {
 Money::Currency.register(curr)
 
 rval = 2.7                                  # Risk multiplier to determine profit
-market_price = Money.new(1415, "USD")       # Current market price / buy in pice
+market_price = Money.new(1429, "USD")       # Current market price / buy in pice
 Money.add_rate("USD", "ETH", market_price)
 
-order_size = 6                           # Number of ETH to buy
-usd_risk = Money.new(50, "USD")
-short = true
+order_size = 4                          # Number of ETH to buy
+usd_risk = Money.new(100, "USD")
+short = false
 
 total_usd_price = order_size * market_price
 
